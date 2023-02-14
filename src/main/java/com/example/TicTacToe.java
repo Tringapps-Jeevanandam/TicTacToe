@@ -72,7 +72,7 @@ class TicTacToe {
 
     }
     public static boolean winner(char[][] board, char sym){
-        if ((board[0][0] == sym && board [0][1] == sym && board [0][2] == sym) ||
+        return((board[0][0] == sym && board [0][1] == sym && board [0][2] == sym) ||
 			(board[1][0] == sym && board [1][1] == sym && board [1][2] == sym) ||
 			(board[2][0] == sym && board [2][1] == sym && board [2][2] == sym) ||
 			
@@ -81,10 +81,8 @@ class TicTacToe {
 			(board[0][2] == sym && board [1][2] == sym && board [2][2] == sym) ||
 			
 			(board[0][0] == sym && board [1][1] == sym && board [2][2] == sym) ||
-			(board[0][2] == sym && board [1][1] == sym && board [2][0] == sym) ) {
-			return true;
-		}
-		return false;
+			(board[0][2] == sym && board [1][1] == sym && board [2][0] == sym) );
+		
     }
     public static boolean gameResult(char[][] board) {
 		
@@ -119,7 +117,7 @@ class TicTacToe {
 			if (isEmpty(board, p1pos)){
 				break;
 			} else {
-				Log.info(p1pos + " is not a valid move.");
+				Log.info("Enter a valid move.");
 			}
 		}
 		settingPos(board, "p1", p1pos);
@@ -132,7 +130,7 @@ class TicTacToe {
 			if (isEmpty(board, p2pos)){
 				break;
 			} else {
-				Log.info(p2pos + " is not a valid move.");
+				Log.info("Enter a valid move.");
 			}
 		}
 		settingPos(board, "p2", p2pos);
