@@ -143,13 +143,13 @@ class TicTacToe {
         while (true) {
 			player1Turn(board, input);
 			if (gameResult(board)){
-				break;
+				return;
 			}
 			display(board);
 			
 			player2Turn(board, input);
 			if (gameResult(board)){
-				break;
+				return;
 			}
 			display(board);
 		}
