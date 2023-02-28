@@ -1,4 +1,3 @@
-package tictactoe;
 import java.util.logging.Logger;
 import java.util.Scanner;
 
