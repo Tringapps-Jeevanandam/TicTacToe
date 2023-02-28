@@ -1,3 +1,4 @@
+package je;
 import java.util.logging.Logger;
 import java.util.Scanner;
 
